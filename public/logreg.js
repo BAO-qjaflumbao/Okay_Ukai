@@ -20,3 +20,24 @@ function togglePassword(inputId, toggleBtn) {
     toggleBtn.textContent = "🙈"; // Closed eye emoji
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof hasRegisterErrors !== 'undefined' && hasRegisterErrors) {
+    document.getElementById('container').classList.add('active');
+
+    var popup = document.getElementById('error-popup');
+    if (popup) {
+      popup.style.display = 'flex';
+
+      document.getElementById('close-error-popup').addEventListener('click', function () {
+        popup.style.display = 'none';
+      });
+
+      popup.addEventListener('click', function (e) {
+        if (e.target === popup) {
+          popup.style.display = 'none';
+        }
+      });
+    }
+  }
+});

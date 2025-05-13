@@ -243,3 +243,87 @@ body {
   transform: translateY(-50%);
   z-index: 2;
 }
+
+.error-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+  /* display: flex;  <-- removed here */
+}
+
+.error-popup-content {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.error-popup-content h3 {
+  margin-bottom: 15px;
+  color: #e5345b;
+}
+
+.error-popup-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #b00020;
+}
+
+.error-popup-content button {
+  margin-top: 15px;
+  background-color: #e5345b;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-popup-content button:hover {
+  opacity: 0.9;
+}
+
+.message {
+  background-color: #db3257; /* matches your toggle background */
+  color: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 5px 15px rgba(219, 50, 87, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message a button {
+  margin-top: 15px;
+  background-color: #fff;
+  color: #db3257;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message a button:hover {
+  background-color: #f9f9f9;
+}
