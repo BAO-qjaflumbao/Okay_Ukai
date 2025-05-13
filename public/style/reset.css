@@ -115,3 +115,42 @@ p {
     font-size: 1.1em;
     color: #333;
 }
+
+.password-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input[type="password"] {
+  flex: 1;
+  height: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #eee;
+  border: none;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  padding: 0;
+  height: 40px;
+  width: 30px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 2;
+}

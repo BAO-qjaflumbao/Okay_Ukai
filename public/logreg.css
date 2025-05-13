@@ -235,7 +235,7 @@ body {
   color: #555;
   padding: 0;
   height: 40px;
-  width: 30px; /* or auto */
+  width: 30px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,7 +245,7 @@ body {
 }
 
 .error-popup {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   z-index: 9999;
   left: 0;
@@ -255,7 +255,7 @@ body {
   background-color: rgba(0,0,0,0.5);
   align-items: center;
   justify-content: center;
-  /* display: flex;  <-- removed here */
+
 }
 
 .error-popup-content {
@@ -294,7 +294,7 @@ body {
 }
 
 .message {
-  background-color: #db3257; /* matches your toggle background */
+  background-color: #db3257; 
   color: white;
   padding: 20px 30px;
   border-radius: 15px;
