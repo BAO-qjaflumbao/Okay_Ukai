@@ -58,12 +58,12 @@ if (isset($_POST['register'])) {
 
   // Name validation
   if (!preg_match("/^[a-zA-Z\s'-]+$/", $name)) {
-    $errors[] = "• Invalid name. Use letters, spaces, apostrophes, or hyphens only.";
+    $errors[] = "Invalid name. Use letters, spaces, apostrophes, or hyphens only.";
   }
 
   // Username validation
   if (!preg_match("/^[a-zA-Z0-9]+$/", $username)) {
-    $errors[] = "• Invalid username. Use letters and numbers only, no spaces or special characters.";
+    $errors[] = "Invalid username. Use letters and numbers only, no spaces or special characters.";
   }
 
   // Unique username check
@@ -72,25 +72,25 @@ if (isset($_POST['register'])) {
   $check->execute();
   $result = $check->get_result();
   if ($result->num_rows > 0) {
-    $errors[] = "• Username is already taken. Please try another.";
+    $errors[] = "Username is already taken. Please try another.";
   }
 
   // Contact number validation (Philippines)
   if (!preg_match('/^(\+63|0)9\d{9}$/', $contact)) {
-    $errors[] = "• Invalid contact number. Must be a valid Philippine number.";
+    $errors[] = "Invalid contact number. Must be a valid Philippine number.";
   }
 
   // Password validations
   if ($password !== $confirm_password) {
-    $errors[] = "• Passwords do not match.";
+    $errors[] = "Passwords do not match.";
   }
 
   if (strlen($password) < 8) {
-    $errors[] = "• Password must be at least 8 characters long.";
+    $errors[] = "Password must be at least 8 characters long.";
   }
 
   if (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])/', $password)) {
-    $errors[] = "• Password must include an uppercase letter, a lowercase letter, a number, and a special character.";
+    $errors[] = "Password must include an uppercase letter, a lowercase letter, a number, and a special character.";
   }
 
   // If no errors, register user
@@ -122,7 +122,7 @@ if (isset($_POST['register'])) {
 </head>
 
 <body>
-  <div class="container" id="container">
+  <div class="container<?php echo (!empty($errors) && isset($_POST['register'])) ? ' active' : ''; ?>" id="container">
 
     <!-- Register Form -->
     <div class="form-container sign-up">
