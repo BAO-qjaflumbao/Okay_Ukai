@@ -110,7 +110,7 @@
                         <input type="hidden" class="pcode" value="<?= $row['product_id']?>"> 
                         <input type="hidden" class="plink" value="<?= $row['link']?>">  
 
-                        <button class="btn btn-info btn-block addItemBtn"><i class="fas fa-cart-plus"></i>&nbsp add to cart</button>
+                        <button class="btn btn-info btn-block addItemBtn"><i class="fas fa-cart-plus"></i>&nbsp Add to Cart</button>
                     </form>
             </div>
         </div>

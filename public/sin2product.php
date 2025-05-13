@@ -8,8 +8,7 @@
     <title>Okay_Ukai Thrift Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="prodstyle.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="prod.css">
 </head>
 
 <body>

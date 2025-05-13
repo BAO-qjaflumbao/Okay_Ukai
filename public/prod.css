@@ -250,22 +250,23 @@
 
 #prodetails .single-pro-details{
     width: 50%;
-    padding-top: 100px;
     margin-left: 150px;
+    margin-bottom: 80px;
 }
 
 #prodetails .single-pro-details h4{
-    padding: 40px 0 20px 0;
+    padding: 0 0 20px 0;
 }
 
 #prodetails .single-pro-details h2{
     font-size: 26px;
+    padding-bottom: 5px;
 }
 
 #prodetails .single-pro-details button{
-    background: #088178;
     color: #fff;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #prodetails .single-pro-details span{
@@ -489,4 +490,93 @@ button.normal2 {
     width: 100% !important;
     height: 250px !important;
     margin-top: 15px;
+}
+
+#prodetails {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+    height: 80vh;            /* full viewport height */
+    gap: 10px;                /* spacing between image and details */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 120px;
+
+}
+
+
+.single-pro-image {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 180px; /* Adjust the value to the height of your navbar */
+    margin-left: 170px;
+}
+
+
+.single-pro-image #MainImg {
+    max-height: 65vh;
+    object-fit: contain;
+    width: auto;
+    max-width: 100%;
+}
+
+.small-img-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.small-img-col {
+    flex: 0 0 auto;
+    width: 80px; /* fixed size per image */
+    height: 80px;
+}
+
+.small-img-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#product2 {
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: Adds a background color */
+}
+
+.pro-container2 {
+    display: flex;
+    justify-content: space-between; /* Evenly spaces out the products */
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    max-width: 1200px; /* Set a max-width to prevent stretching */
+    margin: 0 auto; /* Centers the container horizontally */
+    gap: 20px; /* Adds space between the products */
+}
+
+.pro {
+    flex: 1 1 23%; /* Makes each product take up about 23% of the width */
+    min-width: 250px; /* Ensures each product has a minimum width */
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff; /* Optional: Adds a background to each product */
+}
+
+.pro img {
+    width: 100%; /* Ensures the image fills its container */
+    object-fit: cover; /* Makes sure the image maintains aspect ratio */
+}
+
+.des {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.star i {
+    color: #ffbf00; /* Color for the stars */
 }
