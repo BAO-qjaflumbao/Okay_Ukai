@@ -3,7 +3,7 @@
 
    include("php/config.php");
    if(!isset($_SESSION['valid'])){
-    header("Location: login.php");
+    header("Location: logreg.php");
    }
 ?>
 
