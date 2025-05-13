@@ -23,7 +23,7 @@ if (isset($_POST['login'])) {
       $_SESSION['valid'] = $row['username'];
       $_SESSION['name'] = $row['name'];
       $_SESSION['contact'] = $row['contact'];
-      $_SESSION['id'] = $row['user_id'];
+      $_SESSION['id'] = $row['Id'];
       header("Location:/Okay_Ukai/public/index.php");
       exit();
     }

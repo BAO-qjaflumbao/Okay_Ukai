@@ -76,7 +76,7 @@
                             <a class = "nav-link text-uppercase text-dark" href = "#tiktok">tiktok</a>
                         </li>
                         <li class="nav-item px-2 py-2 border-0">
-                            <a class="nav-link text-uppercase text-dark" href="login.php">Login</a>
+                            <a class="nav-link text-uppercase text-dark" href="logreg.php">Login</a>
                         </li>
                     </ul>
                 </div>
